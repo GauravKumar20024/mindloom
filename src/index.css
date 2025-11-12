@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --primary: #7C83FD;
+  --muted: #6b6b7a;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{
+  max-width:900px;
+  margin:32px auto;
+  padding:20px;
+}
+.card{
+  background:var(--card);
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(20,20,40,0.06);
+  padding:18px;
+}
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:16px;
+}
+.title{
+  display:flex;
+  flex-direction:column;
+}
+.title h1{margin:0;font-size:20px}
+.title p{margin:0;font-size:13px;color:var(--muted)}
+.form-row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+select,input,textarea{
+  width:100%;
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid #e9e9f1;
+  font-size:14px;
+  background:transparent;
+}
+textarea{min-height:76px;resize:vertical}
+button{
+  padding:10px 14px;
+  border-radius:9px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+  background:var(--primary);
+  color:white;
+}
+.small{font-size:13px;color:var(--muted)}
+.mood-pill{
+  padding:6px 10px;
+  border-radius:999px;
+  background:#f3f4ff;
+  display:inline-block;
+  font-weight:600;
+}
+.flex{display:flex}
+.col{flex-direction:column}
+.space-between{justify-content:space-between}
+.gap-12{gap:12px}
+
+
